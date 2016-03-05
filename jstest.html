@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var s = 'aaabbbcccaaabbbaaabbbbbbbbbb';
+		var a = s.split('');
+		a.sort();
+		s = a.join('');
+		var pattern = /(\w)\1*/g;
+		var ans = s.match(pattern);
+		ans.sort(function(a, b) {
+		return a.length < b.length;
+		});;
+		console.log(ans[0][0] + ': ' + ans[0].length);
+	</script>
+	
+</body>
+</html>
