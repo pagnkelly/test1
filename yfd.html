@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  .outer {
+    background: blue;
+    overflow: hidden;
+    padding: 5px;
+    width: 220px;
+    height: 220px;
+  }
+
+  .inner {
+    width: calc((100% - 20px) / 2);
+    height: calc((100% - 20px) / 2);
+    background: red;
+    float: left;
+    margin: 5px;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class='inner'></div>
+    <div class='inner'></div>
+    <div class='inner'></div>
+    <div class='inner'></div>
+  </div>
+</body>
+</html>

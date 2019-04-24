@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .outer {
+      border: 5px dotted rgb(214,129,137);
+      border-radius: 5px;
+      width: 450px;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+
+    .float {
+      padding: 10px;
+      border: 5px solid rgba(214,129,137,.4);
+      border-radius: 5px;
+      background-color: rgba(233,78,119,.4);
+      color: #fff;
+      /* float: left; */
+      width: 200px;
+      margin: 0 20px 20px 0;
+    }
+
+    .r {
+      width: 100px;
+      height: 100px;
+      background: red;
+      overflow: hidden;
+    }
+    .i {
+      width: 50px;
+      height: 50px;
+      background: #fff;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+  <div class="float">I am a floated element.I am a floated elementI am a floated elementI am a floated elementI am a floated element</div>
+  <div class="r">
+    <div class="i"></div>
+  </div>
+    I am text inside the outer box.
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+  </head>
+  <body>
+    <a class="btn btn-default" href="#" role="button">Link</a>
+    <button class="btn btn-default" type="submit">Button</button>
+    <input class="btn btn-default" type="button" value="Input" />
+    <input class="btn btn-default" type="submit" value="Submit" />
+    <script >
+        function addCssByLink(url){
+          var doc=document;
+          var link=doc.createElement("link");
+          link.setAttribute("rel", "stylesheet");
+          link.setAttribute("type", "text/css");
+          link.setAttribute("href", url);
+
+          var heads = doc.getElementsByTagName("head");
+          if(heads.length)
+          heads[0].appendChild(link);
+          else
+          doc.documentElement.appendChild(link);
+        }
+        console.log(1111);
+        setTimeout(() => {
+          addCssByLink('https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css');
+        }, 1000)
+    </script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
